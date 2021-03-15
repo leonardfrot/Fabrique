@@ -1,6 +1,5 @@
 package Factory;
 
-import Factory.FabriqueVhc;
 import Vehicules.Car;
 import Vehicules.Moto;
 
