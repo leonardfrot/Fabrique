@@ -1,3 +1,5 @@
+
+/*
 public class FabriqueA {
     private static FabriqueA instance = new FabriqueA();
 
@@ -31,3 +33,4 @@ public class FabriqueA {
     }
 
 }
+*/
