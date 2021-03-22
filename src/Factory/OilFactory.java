@@ -27,7 +27,7 @@ public class OilFactory implements FabriqueVhc {
 
     @Override
     public Moto createMoto(String model, String color, int cubicCapacity, Carburant carburant) {
-        return null;
+        return new OilMoto(model, color, cubicCapacity, carburant);
     }
 
 
