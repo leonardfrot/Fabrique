@@ -17,6 +17,7 @@ public class main {
                 Vehicule electricMoto = ElectricFactory.getInstance().createMoto("Susuki", "Noir", 900, null);
                 Vehicule oilCar = OilFactory.getInstance().createCar("Subaru", "Rouge", 4, 5, Carburant.diesel);
                 Vehicule oilMoto = OilFactory.getInstance().createMoto("Yamaha", "Gris", 1500, Carburant.sansPlomp95);
+                //Création de vehicules génériques qui se spécialise selon la signature
                 Vehicule newVhc = ElectricFactory.getInstance().createVehicule("Toyota", "Rouge", 3, 5, null);
                 Vehicule newVhc2 = ElectricFactory.getInstance().createVehicule("Toyota", "Blanche", 3, 5, null);
 
