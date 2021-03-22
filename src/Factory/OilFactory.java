@@ -2,14 +2,27 @@ package Factory;
 
 import Vehicules.Car;
 import Vehicules.Moto;
+import Vehicules.OilCar;
+import Vehicules.OilMoto;
 
 public class OilFactory implements FabriqueVhc {
-    public Car createCar(){
-        return null;
+
+    private static OilFactory INSTANCE;
+
+    private OilFactory(){}
+
+    public synchronized static OilFactory getInstance(){
+        if (INSTANCE == null){
+            INSTANCE = new OilFactory();
+        }
+        return INSTANCE;
     }
 
-    public Moto createMoto(){
-        return null;
-    }
+    public OilCar createCar(){
+        return new OilCar();
+    };
+    public OilMoto createMoto(){
+        return new OilMoto();
+    };
 
 }

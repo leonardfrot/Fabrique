@@ -1,10 +1,27 @@
+import Factory.ElectricFactory;
+import Vehicules.Car;
+import Vehicules.Vehicule;
 
 public class main {
 
         public static void main(String [] args){
-            /*FabriqueA fabrique = FabriqueA.getFabriqueAInstance();
-            FabriqueA.Animal animal = FabriqueA.getFabriqueA("chien");
-            animal.myName();
-             */
+                /*Car electriccar = ElectricFactory.getInstance().createCar();
+                electriccar.setModele("Toyota");
+                electriccar.setCouleur("rouge");
+                electriccar.setNbPlaces(6);
+                electriccar.setNbPortes(9);*/
+
+                Vehicule electricCar = ElectricFactory.getInstance().createVehicule("Car");
+                electricCar.setModele("Toyota");
+                electricCar.setCouleur("rouge");
+
+
+
+
+
+
+
+
+
         }
 }
