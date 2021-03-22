@@ -5,6 +5,11 @@ import Vehicules.Car;
 public class OilCar extends Car {
     Carburant typeCarburant;
 
+    public OilCar(String modele, String couleur, int nbPlaces, int nbPortes, Carburant typeCarburant) {
+        super(modele, couleur, nbPlaces, nbPortes);
+        this.typeCarburant = typeCarburant;
+    }
+
     public Carburant getTypeCarburant() {
         return typeCarburant;
     }

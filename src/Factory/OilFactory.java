@@ -1,9 +1,6 @@
 package Factory;
 
-import Vehicules.Car;
-import Vehicules.Moto;
-import Vehicules.OilCar;
-import Vehicules.OilMoto;
+import Vehicules.*;
 
 public class OilFactory implements FabriqueVhc {
 
@@ -18,11 +15,21 @@ public class OilFactory implements FabriqueVhc {
         return INSTANCE;
     }
 
-    public OilCar createCar(){
-        return new OilCar();
-    };
-    public OilMoto createMoto(){
-        return new OilMoto();
-    };
+    @Override
+    public Vehicule createVehicule(String caracteristics) {
+        return null;
+    }
+
+    @Override
+    public Car createCar(String model, String color, int nbSeats, int nbDoors, Carburant carburant) {
+        return new OilCar(model, color, nbSeats, nbDoors, carburant);
+    }
+
+    @Override
+    public Moto createMoto(String model, String color, int cubicCapacity, Carburant carburant) {
+        return null;
+    }
+
+
 
 }

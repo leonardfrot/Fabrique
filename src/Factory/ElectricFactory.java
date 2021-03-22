@@ -14,22 +14,19 @@ public class ElectricFactory implements FabriqueVhc {
         return INSTANCE;
     }
 
-    public Vehicule createVehicule(String type){
-        switch(type){
-            case "Car": return this.createCar();
-            case "Moto": return this.createMoto();
-            default:
-                System.out.println("erreur");
-                return null;
-        }
-
-
+    @Override
+    public Vehicule createVehicule(String caracteristics) {
+        return null;
     }
 
-    public ElectricCar createCar(){
-        return new ElectricCar();
+    @Override
+    public Car createCar(String model, String color, int nbSeats, int nbDoors, Carburant carburant) {
+        return new ElectricCar(model, color, nbSeats, nbDoors);
     }
-    public ElectricMoto createMoto(){
-        return new ElectricMoto();
-    };
+
+    @Override
+    public Moto createMoto(String model, String color, int Cylindree, Carburant carburant) {
+        return new ElectricMoto(model, color, Cylindree);
+    }
+
 }

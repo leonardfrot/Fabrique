@@ -4,6 +4,11 @@ public abstract class Vehicule {
     private String modele;
     private String couleur;
 
+    public Vehicule(String modele, String couleur) {
+        this.modele = modele;
+        this.couleur = couleur;
+    }
+
     public String getModele() {
         return modele;
     }
