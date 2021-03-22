@@ -10,10 +10,11 @@ public class ElectricCar extends Car{
     }
     @Override
     public String toString() {
-        return "modele: " + this.getModele() +
-                "couleur " + this.getCouleur() +
-                "nbPlaces " + this.getNbPlaces() +
-                "nbPortes " + this.getNbPortes();
+        return "modele : " + this.getModele() +
+                ", couleur : " + this.getCouleur() +
+                ", nbPlaces : " + this.getNbPlaces() +
+                ", nbPortes : " + this.getNbPortes() +
+                ", type de vhc : " + this.getClass();
     }
 
 }

@@ -15,4 +15,14 @@ public class OilMoto extends Moto {
     public void setTypeCarburant(Carburant typeCarburant) {
         this.typeCarburant = typeCarburant;
     }
+
+    @Override
+    public String toString() {
+        return "modele : " + this.getModele() +
+                ", couleur : " + this.getCouleur() +
+                ", cylindree : " + this.getCylindree() +
+                ", carburant : " + this.getTypeCarburant()+
+                ", type de vhc : " + this.getClass();
+
+    }
 }

@@ -7,9 +7,9 @@ public class ElectricMoto extends Moto {
 
     @Override
     public String toString() {
-        return "modele: " + this.getModele() +
-                "couleur " + this.getCouleur() +
-                "cylindree " + this.getCylindree();
-
+        return "modele : " + this.getModele() +
+                ", couleur : " + this.getCouleur() +
+                ", cylindree : " + this.getCylindree()+
+                ", type de vhc : " + this.getClass();
     }
 }

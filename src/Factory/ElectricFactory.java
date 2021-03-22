@@ -15,8 +15,12 @@ public class ElectricFactory implements FabriqueVhc {
     }
 
     @Override
-    public Vehicule createVehicule(String caracteristics) {
-        return null;
+    public Vehicule createVehicule(String model, String color, int nbSeats, int nbDoors, Carburant carburant) {
+        return this.createCar(model, color, nbSeats, nbDoors, null);
+    }
+    @Override
+    public Vehicule createVehicule(String model, String color, int cylindree, Carburant carburant) {
+        return this.createMoto(model, color, cylindree, null);
     }
 
     @Override
@@ -25,8 +29,8 @@ public class ElectricFactory implements FabriqueVhc {
     }
 
     @Override
-    public Moto createMoto(String model, String color, int Cylindree, Carburant carburant) {
-        return new ElectricMoto(model, color, Cylindree);
+    public Moto createMoto(String model, String color, int cylindree, Carburant carburant) {
+        return new ElectricMoto(model, color, cylindree);
     }
 
 }

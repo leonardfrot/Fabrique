@@ -17,4 +17,14 @@ public class OilCar extends Car {
     public void setTypeCarburant(Carburant typeCarburant) {
         this.typeCarburant = typeCarburant;
     }
+
+    @Override
+    public String toString() {
+        return "modele : " + this.getModele() +
+                ", couleur : " + this.getCouleur() +
+                ", nbPlaces : " + this.getNbPlaces() +
+                ", nbPortes : " + this.getNbPortes() +
+                ", carburant : " + this.getTypeCarburant()+
+                ", type de vhc : " + this.getClass();
+    }
 }

@@ -14,10 +14,18 @@ public class OilFactory implements FabriqueVhc {
         }
         return INSTANCE;
     }
-
+/*
     @Override
     public Vehicule createVehicule(String caracteristics) {
         return null;
+    }*/
+
+
+    public Vehicule createVehicule(String model, String color, int nbSeats, int nbDoors, Carburant carburant){
+        return new OilCar(model, color, nbSeats, nbDoors, carburant);
+    }
+    public Vehicule createVehicule(String model, String color, int cylindree, Carburant carburant){
+        return new OilMoto(model, color, cylindree, carburant);
     }
 
     @Override
@@ -26,8 +34,8 @@ public class OilFactory implements FabriqueVhc {
     }
 
     @Override
-    public Moto createMoto(String model, String color, int cubicCapacity, Carburant carburant) {
-        return new OilMoto(model, color, cubicCapacity, carburant);
+    public Moto createMoto(String model, String color, int cylindree, Carburant carburant) {
+        return new OilMoto(model, color, cylindree, carburant);
     }
 
 
