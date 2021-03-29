@@ -11,5 +11,4 @@ public interface FabriqueVhc {
     public Vehicule createVehicule(String model, String color, int cylindree, Carburant carburant);
     Car createCar(String model, String color, int nbSeats, int nbDoors, Carburant carburant);
     Moto createMoto(String model, String color, int cubicCapacity, Carburant carburant);
-
 }

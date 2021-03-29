@@ -18,16 +18,16 @@ public class main {
                 Vehicule oilCar = OilFactory.getInstance().createCar("Subaru", "Rouge", 4, 5, Carburant.diesel);
                 Vehicule oilMoto = OilFactory.getInstance().createMoto("Yamaha", "Gris", 1500, Carburant.sansPlomp95);
                 //Création de vehicules génériques qui se spécialise selon la signature
-                Vehicule newVhc = ElectricFactory.getInstance().createVehicule("Toyota", "Rouge", 3, 5, null);
-                Vehicule newVhc2 = ElectricFactory.getInstance().createVehicule("Toyota", "Blanche", 3, 5, null);
+                Vehicule electricCar2 = ElectricFactory.getInstance().createVehicule("Toyota", "Rouge", 3, 5, null);
+                Vehicule ElectricCar3 = ElectricFactory.getInstance().createVehicule("Toyota", "Blanche", 3, 5, null);
 
                 List<Vehicule> list = new ArrayList<>();
                 list.add(electricCar);
                 list.add(electricMoto);
                 list.add(oilCar);
                 list.add(oilMoto);
-                list.add(newVhc);
-                list.add(newVhc2);
+                list.add(electricCar2);
+                list.add(ElectricCar3);
 
                 for(Vehicule v : list){
                         System.out.println(v);
